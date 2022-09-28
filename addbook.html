@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+  <style>
+  .navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0065a2;
+    color: #ffffff;
+
+}
+.logout{
+  marginRight: 20px;
+  background: #0065a2;
+  color: #ffff;
+  border: none;
+  outline: none;
+  margin: 20px;
+  cursor: pointer;
+  }
+    .addcontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 5% auto;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 70%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 920px;
+}
+
+.form input ,
+.form select{
+    width: 100%;
+    background-color: #f0f8ff;
+    border: 1px solid #f0f8ff;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+.addbtn{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: end;
+    padding: 20px;
+    margin-left: 900px;
+
+}
+.addbtn button{
+  background-color: #0065a2;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+  </style>
+</head>
+<body>
+   <div>
+            <div class='mainNav'>
+            <div class='navbar'>
+                <h3>Library Management</h3>
+                <a href="http://127.0.0.1:8000">
+                <button class="logout">LOGOUT</button>
+                </a>
+            </div>
+
+        </div>
+            <div class='addcontact'>
+                <h2>Add a contact</h2>
+                <form class='form'>
+                    <label>Book Name : </label>
+                    <input type="text" name='bookName' required='required' placeholder='Enter a Book Name...' />
+                    <label>ISBN</label>
+                    <input type="Number" required='required' placeholder='ISBN' />
+                    <label>Category : </label>
+                    <select>
+
+                        <option>Physiology</option>
+                        <option>Fantasy</option>
+                        <option>Romance novel</option>
+                        <option>Biography</option>
+                        <option>Mystery</option>
+                        <option>Children's literature</option>
+                        <option>Memori</option>
+                        <option>Autobigraphy</option>
+                        <option>Dystopian</option>
+                        <option>Nonfiction</option>
+                    </select>
+                    <label>Quantity</label>
+                    <input type="number" placeholder='Quantity' required='required' />
+
+                    <label >ce</label>
+                    <input type="text" placeholder='price' required='required' />
+                </form>
+                <div class='addbtn'>
+                    <button style="margin-left: 20px">CANCLE</button>
+                    <br/>
+                    <a href="http://127.0.0.1:8000/home/">
+                    <button style="margin-right: 70px; width: 90px;">ADD BOOk</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+  <style>
+  .navbar{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0065a2;
+    color: #ffffff;
+
+}
+    .bookslist{
+
+    margin: 0% auto;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+.bookt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.btn{
+    width: 100px;
+    height: 40px;
+   margin-top: 30px;
+   background-color: #0065a2;
+   border: none;
+   color: #ffffff;
+}
+
+.booktable{
+    margin-left: 50px;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+}
+th,td{
+
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 14px;
+    font-size: 18px;
+}
+th{
+
+    background-color: rgb(117, 201, 250);
+}
+td{
+    background-color: rgb(205, 235, 253);
+    font-size: 16px;
+}
+  .logout{
+  marginRight: 20px;
+  background: #0065a2;
+  color: #ffff;
+  border: none;
+  outline: none;
+  margin: 20px;
+  cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+    <div class='mainNav'>
+            <div class='navbar'>
+                <h3>Library Management</h3>
+                <a href="http://127.0.0.1:8000">
+                <button class="logout">LOGOUT</button>
+                </a>
+            </div>
+
+        </div>
+    <div class='bookslist'>
+
+      <div class='bookt'>
+        <h1 style="padding-left: 48px;">BooksList</h1>
+        <a href="http://127.0.0.1:8000/addbook">
+        <button class='btn' style="margin-right: 110px;">Add Book</button>
+        </Link>
+      </div>
+      <div>
+      <table class='booktable'>
+        <thead>
+          <tr class='bookhead'>
+            <th>Name</th>
+            <th>ISBN</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Awaialable</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr >
+            <td >Atomic Habits</td>
+            <td>0923456</td>
+            <td>Physiology</td>
+            <td>10</td>
+            <td>9</td>
+            <td>500/-</td>
+          </tr>
+          <tr >
+            <td >American Gods</td>
+            <td>0825556</td>
+            <td>Fantasy</td>
+            <td>50</td>
+            <td>39</td>
+            <td>200/-</td>
+          </tr>
+          <tr >
+            <td >Outlander</td>
+            <td>056456</td>
+            <td>Romance novel</td>
+            <td>30</td>
+            <td>15</td>
+            <td>700/-</td>
+          </tr>
+          <tr >
+            <td >Educated</td>
+            <td>0923456</td>
+            <td>Biography</td>
+            <td>80</td>
+            <td>79</td>
+            <td>1500/-</td>
+          </tr>
+          <tr >
+            <td >The Silent Patient</td>
+            <td>0873456</td>
+            <td>Mystery</td>
+            <td>30</td>
+            <td>19</td>
+            <td>800/-</td>
+          </tr>
+          <tr >
+            <td >Charlotte's Web</td>
+            <td>0929856</td>
+            <td>Children's literature</td>
+            <td>80</td>
+            <td>89</td>
+            <td>400/-</td>
+          </tr>
+          <tr >
+            <td >The Art of Memory</td>
+            <td>0923400</td>
+            <td>Memori</td>
+            <td>50</td>
+            <td>29</td>
+            <td>1400/-</td>
+          </tr>
+          <tr >
+            <td >The Diary of a Young Girl</td>
+            <td>0900456</td>
+            <td>Autobigraphy</td>
+            <td>70</td>
+            <td>67</td>
+            <td>1500/-</td>
+          </tr>
+          <tr >
+            <td >The Handmaid's Tale</td>
+            <td>0672345</td>
+            <td>Dystopian</td>
+            <td>60</td>
+            <td>15</td>
+            <td>1100/-</td>
+          </tr>
+          <tr >
+            <td >In Could Blood</td>
+            <td>0023457</td>
+            <td>Nonfiction</td>
+            <td>20</td>
+            <td>8</td>
+            <td>600/-</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+    </div>
+</body>
+</html>

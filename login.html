@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        .Login__page{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 10% auto;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.25);
+    width: 30%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.container label
+{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 290px;
+
+}
+.container input{
+    background-color: #f0f8ff;
+    border: 1px solid #f0f8ff;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.loginbtn{
+    width: 100%;
+    background-color: #0065a2;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.details{
+    font-size: 16px;
+}
+.details span{
+    font-weight: 400;
+}
+    </style>
+</head>
+<body>
+    <div class='Login__page'>
+      <h1 >Library Management</h1>
+        <h1>Login</h1>
+        <form class='container' method="post" action="#">
+
+            <label>Email</label>
+            <input  type="email" placeholder='Enter your email' required />
+
+            <label>Password</label>
+            <input type="password" placeholder='Enter your password'required/>
+
+            <a href="http://127.0.0.1:8000/home/" >
+            <button type='button' class='loginbtn'>Login</button>
+            </a>
+            <p class='details'>Forgotten your login details? <span >Get hepl with Signup.</span></p>
+
+            <hr>
+
+            <p>Don't have an account?
+             <a href="http://127.0.0.1:8000/signup/">
+              <span style="cursor:pointer; font-weight: bold;">Sign up.</span>
+             </a>
+              </p>
+        </form>
+    </div>
+</body>
+</html>

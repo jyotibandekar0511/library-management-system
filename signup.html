@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <style>
+        .signup__page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.25);
+    width: 30%;
+    height: 60%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.signup__form{
+    display: flex;
+    flex-direction: column;
+}
+.signup__form label{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 290px;
+}
+.signup__form input{
+    background-color: #f0f8ff;
+    border: 1px solid #f0f8ff;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.signupbtn{
+    background-color: #0065a2;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    height: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+    </style>
+</head>
+<body>
+<div class='signup__page'>
+      <h1 >Signup</h1>
+      <form class='signup__form' method="post" action="#">
+        <label>First Name</label>
+        <input type='text' placeholder='Enter your first name' />
+        <label>Last Name</label>
+        <input type='text' placeholder='Enter your last name' />
+        <label>Email</label>
+        <input type="email" placeholder='Enter your email' />
+        <label>Password</label>
+        <input type="password" placeholder='Enter your password' />
+        <Link to={"/booklist"}>
+          <button type='button' class='signupbtn' >Sign Up</button>
+        </Link>
+        <p style="margin-left: 60px; margin-bottom: 50px;">Already have an account?
+          <a href="http://127.0.0.1:8000/">
+            <span >Login</span>
+          </a>
+        </p>
+
+      </form>
+    </div >
+</body>
+</html>
